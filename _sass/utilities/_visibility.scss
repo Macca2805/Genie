@@ -1,26 +1,11 @@
-/*------------------------------------*\
-    #VISIBILITY CLASSES
-\*------------------------------------*/
+//
+// Visibility utilities
+//
 
-/**
- * Is Hidden
- * 1) Completely remove from the flow and screen readers.
- */
-.u-is-hidden {
-    display: none !important;
-    visibility: hidden !important;
+.visible {
+  @include invisible(visible);
 }
 
-/**
- * Is Visibly Hidden
- * 1) Completely remove from the flow but leave available to screen readers.
- */
-.u-is-vishidden {
-    position: absolute !important;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    border: 0;
-    clip: rect(1px, 1px, 1px, 1px);
+.invisible {
+  @include invisible(hidden);
 }
