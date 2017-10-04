@@ -9,10 +9,9 @@
 title: Genie - Cash Converters Style Guidelines
 email: servicedesk@cashconverters.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/Genie/" # the subpath of your site, e.g. /blog
+  Genie is the design system for Cash Converters, Australia's favourite place to buy and
+  sell secondhand goods.
+baseurl: "/Genie" # the subpath of your site, e.g. /blog
 url: "http://cashconverters.github.io/Genie/" # the base hostname & protocol for your site
 twitter_username: cashconvertersau
 github_username:  cashconverters
