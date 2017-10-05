@@ -2,5 +2,4 @@
 
 Cash Converters Style Guidelines
 
-(https://cashconverters.github.io/Genie)
-
+https://cashconverters.github.io/Genie
