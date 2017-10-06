@@ -14,6 +14,7 @@ baseurl: "/Genie" # the subpath of your site, e.g. /blog
 url: "http://cashconverters.github.io/Genie/" # the base hostname & protocol for your site
 twitter_username: cashconvertersau
 github_username:  cashconverters
+version: 1.0.0
 
 # Build settings
 markdown: kramdown

@@ -57,6 +57,10 @@ $link-hover-color: theme-color("primary");
 
 @import "bootstrap";
 
+.flex-expand {
+    flex-grow: 1;
+}
+
 .btn {
     text-decoration: none;
 }
@@ -67,6 +71,16 @@ $link-hover-color: theme-color("primary");
     a:hover,
     a:focus {
         text-decoration: none;
+    }
+}
+
+.navbar-nav-scroll {
+    max-width: 100%;
+    overflow: hidden;
+
+    .navbar-nav {
+        overflow-x: auto;
+        white-space: nowrap;
     }
 }
 
