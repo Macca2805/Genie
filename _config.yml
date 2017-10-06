@@ -6,11 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Genie - Cash Converters Style Guidelines
+title: Genie - Cash Converters Design Guidelines
 email: servicedesk@cashconverters.com
 description: > # this means to ignore newlines until "baseurl:"
-  Genie is the design system for Cash Converters, Australia's favourite place to buy and
-  sell secondhand goods.
+  Genie is the design system for Cash Converters, Australia's favourite place to buy and sell secondhand goods.
 baseurl: "/Genie" # the subpath of your site, e.g. /blog
 url: "http://cashconverters.github.io/Genie/" # the base hostname & protocol for your site
 twitter_username: cashconvertersau

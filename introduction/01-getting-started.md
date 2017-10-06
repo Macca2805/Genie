@@ -2,12 +2,13 @@
 layout: page
 title: Getting Started
 description: The getting started page should provide information for how to get up and running with the design system.
+permalink: /introduction/getting-started/
 ---
 
 ## Downloading
 Provide links and information for downloading the design system's files:
 
-<div><a href="{{ "/downloads.html" | prepend: site.baseurl }}" class="c-btn">Download Design System Files</a></div>
+<a href="{{ "/downloads.html" | prepend: site.baseurl }}" class="btn btn-primary">Download Design System Files</a>
 
 ## File Structure
 Provide an overview of the file system structure and how users of the design system should integrate the design system's code into their project. This info will obviously vary depending on your organization's environment(s).

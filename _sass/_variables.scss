@@ -99,7 +99,9 @@ $colors: (
   gray-dark: $gray-800
 ) !default;
 
-$theme-colors: (
+// Hack; Allows individual colors to be overidden
+$theme-colors: () !default;
+$theme-colors: map-merge((
   primary: $blue,
   secondary: $gray-600,
   success: $green,
@@ -108,7 +110,7 @@ $theme-colors: (
   danger: $red,
   light: $gray-100,
   dark: $gray-800
-) !default;
+), $theme-colors);
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval: 8% !default;

@@ -1,4 +1,75 @@
 ---
 ---
 
-@import "bootstrap"
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("../assets/fonts/Gotham-Book.eot");
+    src: url("../assets/fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"),
+         url("../assets/fonts/Gotham-Book.woff") format("woff"),
+         url("../assets/fonts/Gotham-Book.ttf") format("truetype"),
+         url("../assets/fonts/Gotham-Book.svg#Gotham-Book") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gotham-Bold";
+    src: url("../assets/fonts/Gotham-Bold.eot");
+    src: url("../assets/fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"),
+         url("../assets/fonts/Gotham-Bold.woff") format("woff"),
+         url("../assets/fonts/Gotham-Bold.ttf") format("truetype"),
+         url("../assets/fonts/Gotham-Bold.svg#Gotham-Bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$headings-font-family: "Gotham-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$headings-secondary-font-family: "Gotham-Book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+$spacer: 1rem;
+
+$cc-primary: #920030;
+$cc-secondary: #E3B735;
+
+$theme-colors: (
+    primary: $cc-primary,
+    secondary: $cc-secondary
+);
+
+$h1-font-size: 2rem;
+$h2-font-size: 1.6rem;
+$h3-font-size: 1.45rem;
+$h4-font-size: 1.32rem;
+$h5-font-size: 1.22rem;
+$h6-font-size: 1.1rem;
+
+$display1-size: 4rem;
+$display2-size: 3.5rem;
+$display3-size: 3rem;
+$display4-size: 2.5rem;
+
+$lead-font-size: 1.4rem !default;
+
+$headings-margin-bottom: $spacer;
+
+$link-decoration: underline;
+$link-hover-color: theme-color("primary");
+
+@import "bootstrap";
+
+.btn {
+    text-decoration: none;
+}
+
+.nav,
+.navbar {
+    a,
+    a:hover,
+    a:focus {
+        text-decoration: none;
+    }
+}
+
+.lead {
+    font-family: $headings-secondary-font-family;
+}
