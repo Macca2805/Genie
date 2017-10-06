@@ -1,22 +1,20 @@
 ---
 layout: page
 title: Release History
-description: Jekyll's built-in [blogging feature](http://import.jekyllrb.com/) could be a good way to communicate changes and updates to the design system. See [Material Design's What's New page](https://material.io/guidelines/material-design/whats-new.html) for inspiration.
+description: Keep up-to-date with the most recent releases
 ---
 
-<ul class="c-block-list">
-
-    {% for post in site.posts %}
-        <li class="c-block-list__item">
-
-			<div class="c-block">
-				<h2 class="c-block__heading"><a href="{{ post.url | prepend: site.baseurl }}" class="c-block__link">{{ post.title }}</a></h2>
-            	<div class="c-block__desc">
-					{{ post.content }}
-				</div><!--end c-block__desc-->
-			</div><!--end c-block-->
-
-        </li><!--end c-block-list__item-->
-    {% endfor %}
-	
-</ul><!--end c-block-list-->
+<div>
+	{% for post in site.posts %}
+		<article class="mb-2">
+			<div class="card">
+				<div class="card-body">						
+					<div class="card-title h2">{{ post.title }}</div>
+					<div class="card-subtitle mb-2 text-muted">{{ post.categories }}</div>
+					<p class="card-text">{{ post.content }}</p>						
+					<a class="card-link" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+				</div>
+			</div>
+		</article>
+	{% endfor %}
+</div>

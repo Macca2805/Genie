@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html class="h-100">
-	{% include head.html %}
-	<body class="d-flex flex-column h-100">
+        {% include head.html %}
+    <body class="d-flex flex-column h-100">
         {% include nav.html %}
-        {{ content }}
+        <main class="mb-auto" role="main">
+            {{ content }} 
+        </main>
         {% include footer.html %}
-	</body>
+    </body>
 </html>
