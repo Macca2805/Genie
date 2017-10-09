@@ -16,13 +16,11 @@ To use the Genie buttons apply the `.btn` class to any `button`, `a`, or `input 
 
 <button type="button" class="mr-3 mb-3 btn btn-primary">Primary</button>
 <button type="button" class="mr-3 mb-3 btn btn-default">Default</button>
+<br/>
 <button type="button" class="mr-3 mb-3 btn btn-danger">Danger</button>
 <button type="button" class="mr-3 mb-3 btn btn-warning">Warning</button>
 <button type="button" class="mr-3 mb-3 btn btn-info">Info</button>
 <button type="button" class="mr-3 mb-3 btn btn-success">Success</button>
-<button type="button" class="mr-3 mb-3 btn btn-light">Light</button>
-<button type="button" class="mr-3 mb-3 btn btn-dark">Dark</button>
-<button type="button" class="mr-3 mb-3 btn btn-link">Link</button>
 
 ```html
 <button type="button" class="btn btn-primary">Primary</button>
@@ -31,8 +29,6 @@ To use the Genie buttons apply the `.btn` class to any `button`, `a`, or `input 
 <button type="button" class="btn btn-warning">Warning</button>
 <button type="button" class="btn btn-info">Info</button>
 <button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
 <button type="button" class="btn btn-link">Link</button>
 ```
 
