@@ -1,0 +1,17 @@
+<div class="row mt-5">
+    <div class="col col-lg-6">
+        <h2>Page Information</h2>
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <th scope="row">Ownership</th>
+                    <td>{% if page.owner %}{{page.owner}}{% else %}Unknown{% endif %}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Status</th>
+                    <td>{% if page.status %}{{page.status}}{% else %}Unknown{% endif %}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
