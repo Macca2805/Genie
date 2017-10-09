@@ -55,10 +55,40 @@ $headings-margin-bottom: $spacer;
 $link-decoration: underline;
 $link-hover-color: theme-color("primary");
 
+$transition-timing: cubic-bezier(.26,.85,.46,.99);
+
 @import "bootstrap";
 
 .btn {
+    border: none;
+    cursor: pointer;
     text-decoration: none;
+    font-family: $headings-font-family;
+    padding: ($spacer * 0.75) ($spacer * 3);
+    transition: 200ms box-shadow;
+    transition-timing-function: $transition-timing;
+
+    &:hover,
+    &:focus {
+        z-index: 1050;
+        box-shadow: 0 6px 20px 0 rgba(0,0,0,.19), 0 8px 17px 0 rgba(0,0,0,.2);
+    }
+    
+    .btn-link {
+        &,
+        &:hover,
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    &.btn-lg {
+        padding: ($spacer * 1) ($spacer * 4);
+    }
+    
+    &.btn-sm {
+        padding: ($spacer * 0.5) ($spacer * 2);
+    }
 }
 
 .nav,
@@ -88,4 +118,10 @@ $link-hover-color: theme-color("primary");
 
 .lead {
     font-family: $headings-secondary-font-family;
+}
+
+pre.highlight {
+    margin: 0;
+    margin-bottom: $spacer;
+    padding: $spacer;
 }
