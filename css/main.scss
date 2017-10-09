@@ -68,7 +68,9 @@ $link-hover-color: theme-color("primary");
     a:focus {
         text-decoration: none;
     }
+}
 
+.navbar {
     li.active a {
         font-weight: bold;
     }

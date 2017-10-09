@@ -1,0 +1,8 @@
+<div class="nav-link {% if page.group == include.group %}font-weight-bold{% endif %}">{{ include.label }}</div>
+<nav class="nav nav-pills flex-column p-2 pl-4">
+    {% for p in site.pages %}
+        {% if p.group == include.group %}
+            <a class="nav-link {% if p.url == page.url %}active{% endif %}" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+        {% endif %}
+    {% endfor %}
+</nav>

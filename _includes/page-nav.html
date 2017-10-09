@@ -1,7 +1,4 @@
-<ul class="nav flex-column">
-    {% for p in site.pages %}
-        <li class="nav-item {% if p.url == page.url %}active{% endif %}">
-            <a class="nav-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
-        </li>
-	{% endfor %}
-</ul>
+<nav class="nav flex-column">
+    {% include page-sub-nav.html label='Introduction' group='introduction' %}
+    {% include page-sub-nav.html label='Components' group='components' %}
+</nav>
