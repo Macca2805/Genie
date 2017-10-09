@@ -55,6 +55,12 @@ $headings-margin-bottom: $spacer;
 $link-decoration: underline;
 $link-hover-color: theme-color("primary");
 
+$box-shadow-1: 0 1px 5px 0 rgba(0, 0, 0, 0.16), 0 0.5px 3px 0 rgba(0, 0, 0, 0.26);
+$box-shadow-2: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+$box-shadow-3: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+$box-shadow-4: 0 25px 55px 0 rgba(0, 0, 0, 0.21), 0 16px 28px 0 rgba(0, 0, 0, 0.22);
+$box-shadow-5: 0 40px 77px 0 rgba(0, 0, 0, 0.22), 0 27px 24px 0 rgba(0, 0, 0, 0.2);
+
 $transition-timing: cubic-bezier(.26,.85,.46,.99);
 
 @import "bootstrap";
@@ -65,16 +71,17 @@ $transition-timing: cubic-bezier(.26,.85,.46,.99);
     text-decoration: none;
     font-family: $headings-font-family;
     padding: ($spacer * 0.75) ($spacer * 3);
+    box-shadow: $box-shadow-1;
     transition: 200ms box-shadow;
     transition-timing-function: $transition-timing;
 
     &:hover,
     &:focus {
         z-index: 1050;
-        box-shadow: 0 6px 20px 0 rgba(0,0,0,.19), 0 8px 17px 0 rgba(0,0,0,.2);
+        box-shadow: $box-shadow-2;
     }
     
-    .btn-link {
+    &.btn-link {
         &,
         &:hover,
         &:focus {
