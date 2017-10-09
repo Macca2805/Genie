@@ -81,12 +81,17 @@ $transition-timing: cubic-bezier(.26,.85,.46,.99);
         box-shadow: $box-shadow-2;
     }
     
+    &[disabled],
     &.btn-link {
         &,
         &:hover,
         &:focus {
             box-shadow: none;
         }
+    }
+    
+    &[disabled] {
+        cursor: not-allowed;
     }
 
     &.btn-lg {
