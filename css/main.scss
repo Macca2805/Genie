@@ -68,6 +68,10 @@ $link-hover-color: theme-color("primary");
     a:focus {
         text-decoration: none;
     }
+
+    li.active a {
+        font-weight: bold;
+    }
 }
 
 .navbar-nav-scroll {

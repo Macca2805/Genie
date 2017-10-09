@@ -1,7 +1,7 @@
 <ul class="nav flex-column">
-    {% for page in site.pages %}
-        <li class="nav-item">
-            <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    {% for p in site.pages %}
+        <li class="nav-item {% if p.url == page.url %}active{% endif %}">
+            <a class="nav-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
         </li>
 	{% endfor %}
 </ul>
