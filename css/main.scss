@@ -28,12 +28,13 @@ $headings-secondary-font-family: "Gotham-Book", -apple-system, BlinkMacSystemFon
 
 $spacer: 1rem;
 
-$cc-primary: #920030;
+$cc-primary: #3e8ca7;
 $cc-secondary: #E3B735;
 
 $theme-colors: (
     primary: $cc-primary,
-    secondary: $cc-secondary
+    secondary: $cc-secondary,
+    info: #0032d2
 );
 
 $h1-font-size: 2rem;
@@ -48,9 +49,10 @@ $display2-size: 3.5rem;
 $display3-size: 3rem;
 $display4-size: 2.5rem;
 
-$lead-font-size: 1.4rem !default;
+$lead-font-size: 1.4rem;
 
 $headings-margin-bottom: $spacer;
+$headings-margin-top: $spacer * 1.5;
 
 $link-decoration: underline;
 $link-hover-color: theme-color("primary");
@@ -64,6 +66,11 @@ $box-shadow-5: 0 40px 77px 0 rgba(0, 0, 0, 0.22), 0 27px 24px 0 rgba(0, 0, 0, 0.
 $transition-timing: cubic-bezier(.26,.85,.46,.99);
 
 @import "bootstrap";
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-top: $headings-margin-top;
+}
 
 .btn {
     border: none;
@@ -100,6 +107,22 @@ $transition-timing: cubic-bezier(.26,.85,.46,.99);
     
     &.btn-sm {
         padding: ($spacer * 0.5) ($spacer * 2);
+    }
+
+    &.btn-xl {
+        font-size: 1.1rem;
+        padding: ($spacer * 1) ($spacer * 4);
+
+        small {
+            display: block;
+            white-space: normal;
+            font-family: $headings-secondary-font-family;
+        }
+    }
+
+    &.btn-block {
+        padding-left: $spacer;
+        padding-right: $spacer;
     }
 }
 
