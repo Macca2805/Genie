@@ -12,6 +12,20 @@ owner: macklin.hartley
 
 To use the Genie buttons apply the `.btn` class to any `button`, `a`, or certain types of `input` element. The `.btn` class should always be accompanied by a color class, such as `.btn-primary` or `.btn-default`.
 
+## Button Tags
+
+The .btn classes are designed to be used with the `<button>` element. However, you can also use these classes on `<a>` or `<input>` elements.
+
+When using button classes on `<a>` elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a `role="button"` to appropriately convey their purpose to assistive technologies such as screen readers.
+
+<p>
+    <a class="btn btn-primary" href="#" role="button">Link</a>
+    <button class="btn btn-primary" type="submit">Button</button>
+    <input class="btn btn-primary" type="button" value="Input">
+    <input class="btn btn-primary" type="submit" value="Submit">
+    <input class="btn btn-primary" type="reset" value="Reset">
+</p>
+
 ```html
 <a class="btn btn-primary" href="#" role="button">Link</a>
 <button class="btn btn-primary" type="submit">Button</button>
@@ -96,13 +110,31 @@ Use the `.btn-xl` class to create an extra large button with special formatting.
 
 ## States
 
+### Active
+
+Add the `.active` class to display the button with a darker background in order to appear pressed. When using `<a>` elements, you should also to include the `aria-pressed="true"` attribute indicate the state of the button to assistive technologies such as screen readers.
+
 <p>
-    <button type="button" class="mb-2 btn btn-primary">Primary</button>
+    <a role="button" class="mb-2 btn btn-primary active" href="#" aria-pressed="true">Primary (active)</a>
+    <a role="button" class="mb-2 btn btn-primary" href="#">Primary (inactive)</a>
+</p>
+
+```html
+<a role="button" class="btn btn-primary active" href="#" aria-pressed="true">Primary (active)</a>
+<a role="button" class="btn btn-primary" href="#">Primary (inactive)</a>
+```
+
+### Disabled
+
+Make buttons look inactive by adding the disabled boolean attribute to any `<button>` element.
+
+<p>
+    <button type="button" class="mb-2 btn btn-default">Default (enabled)</button>
     <button type="button" class="mb-2 btn btn-default" disabled>Default (disabled)</button>
 </p>
 
 ```html
-<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-default">Default (enabled)</button>
 <button type="button" class="btn btn-default" disabled>Default (disabled)</button>
 ```
 
@@ -150,7 +182,7 @@ Use the `.btn-xl` class to create an extra large button with special formatting.
 
 ```html
 <div class="row">
-    <div class="col">
+    <div class="col-12 col-md-4">
         <button type="button" class="btn btn-primary btn-block">Primary</button>
     </div>
     <div class="col-12 col-md-4">
