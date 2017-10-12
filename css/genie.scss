@@ -4,6 +4,12 @@
 @import "main";
 @import "syntax";
 
+.genie-content {
+    h2, .h2 {
+        margin-top: $spacer * 3;
+    }
+}
+
 .navbar-nav-scroll {
     max-width: 100%;
     overflow: hidden;
@@ -26,7 +32,7 @@ pre.highlight {
 
 .callout {
     padding: $spacer;
-    margin-bottom: $spacer;
+    margin-bottom: $spacer * 2;
     
     :last-child {
         margin-bottom: 0;
@@ -34,13 +40,14 @@ pre.highlight {
 
     @each $color, $value in $theme-colors {
         &.callout-#{$color} {
-            border: 1px solid darken(theme-color($color), 5%);
-            border-left: ($spacer * 0.5) solid darken(theme-color($color), 5%);
+            background: lighten(theme-color($color), 45%);
+            border: 1px solid darken(theme-color($color), 10%);
+            border-left: ($spacer * 0.5) solid darken(theme-color($color), 10%);
 
-            h1, h2, h3, h4, h5, h6,
-            .h1, .h2, .h3, .h4, .h5, .h6 {
-                font-family: $font-family-sans-serif;
-                color: darken(theme-color($color), 5%);
+            .callout-heading {
+                font-size: $h4-font-size;
+                font-weight: $headings-font-weight;
+                margin-bottom: $headings-margin-bottom;
             }
         }
     }
