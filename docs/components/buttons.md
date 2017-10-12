@@ -16,7 +16,12 @@ To use the Genie buttons apply the `.btn` class to any `button`, `a`, or certain
 
 The .btn classes are designed to be used with the `<button>` element. However, you can also use these classes on `<a>` or `<input>` elements.
 
-When using button classes on `<a>` elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a `role="button"` to appropriately convey their purpose to assistive technologies such as screen readers.
+<div class="callout callout-warning">
+    <div class="h4">Accessibility Note</div>
+    <p markdown="1">
+        When using button classes on `<a>` elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a `role="button"` to appropriately convey their purpose to assistive technologies such as screen readers.
+    </p>
+</div>
 
 <p>
     <a class="btn btn-primary" href="#" role="button">Link</a>
