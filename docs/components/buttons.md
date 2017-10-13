@@ -41,8 +41,8 @@ The .btn classes are designed to be used with the `<button>` element. However, y
 
 ## Basic Buttons
 
-<button type="button" class="mb-2 btn btn-primary">Primary</button>
-<button type="button" class="mb-2 btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-default">Default</button>
 
 ```html
 <button type="button" class="btn btn-primary">Primary</button>
@@ -55,8 +55,8 @@ The .btn classes are designed to be used with the `<button>` element. However, y
 
 Use the `.btn-sm` class to create smaller buttons.
 
-<button type="button" class="mb-2 btn btn-primary btn-sm">Primary</button>
-<button type="button" class="mb-2 btn btn-default btn-sm">Default</button>
+<button type="button" class="btn btn-primary btn-sm">Primary</button>
+<button type="button" class="btn btn-default btn-sm">Default</button>
 
 ```html
 <button type="button" class="btn btn-primary btn-sm">Primary</button>
@@ -67,8 +67,8 @@ Use the `.btn-sm` class to create smaller buttons.
 
 Use the `.btn-lg` class to create larger buttons.
 
-<button type="button" class="mb-2 btn btn-primary btn-lg">Primary</button>
-<button type="button" class="mb-2 btn btn-default btn-lg">Default</button>
+<button type="button" class="btn btn-primary btn-lg">Primary</button>
+<button type="button" class="btn btn-default btn-lg">Default</button>
 
 ```html
 <button type="button" class="btn btn-primary btn-lg">Primary</button>
@@ -120,8 +120,8 @@ Use the `.btn-xl` class to create an extra large button with special formatting.
 Add the `.active` class to display the button with a darker background in order to appear pressed.
 
 <p>
-    <a role="button" class="mb-2 btn btn-primary active" href="#" aria-pressed="true">Primary (active)</a>
-    <a role="button" class="mb-2 btn btn-primary" href="#">Primary (inactive)</a>
+    <a role="button" class="btn btn-primary active" href="#" aria-pressed="true">Primary (active)</a>
+    <a role="button" class="btn btn-primary" href="#">Primary (inactive)</a>
 </p>
 
 ```html
@@ -141,8 +141,8 @@ Add the `.active` class to display the button with a darker background in order 
 Make buttons look inactive by adding the disabled boolean attribute to any `<button>` element.
 
 <p>
-    <button type="button" class="mb-2 btn btn-default">Default (enabled)</button>
-    <button type="button" class="mb-2 btn btn-default" disabled>Default (disabled)</button>
+    <button type="button" class="btn btn-default">Default (enabled)</button>
+    <button type="button" class="btn btn-default" disabled>Default (disabled)</button>
 </p>
 
 ```html
@@ -152,10 +152,10 @@ Make buttons look inactive by adding the disabled boolean attribute to any `<but
 
 ## Colors
 
-<button type="button" class="mb-2 btn btn-danger">Danger</button>
-<button type="button" class="mb-2 btn btn-warning">Warning</button>
-<button type="button" class="mb-2 btn btn-info">Info</button>
-<button type="button" class="mb-2 btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-success">Success</button>
 
 ```html
 <button type="button" class="btn btn-danger">Danger</button>
@@ -180,13 +180,13 @@ Make buttons look inactive by adding the disabled boolean attribute to any `<but
 
 <p>
     <div class="row">
-        <div class="mb-2 col-12 col-md-4">
+        <div class="col-12 col-md-4">
             <button type="button" class="btn btn-primary btn-block">Primary</button>
         </div>
-        <div class="mb-2 col-12 col-md-4">
+        <div class="col-12 col-md-4">
             <button type="button" class="btn btn-default btn-block">Default</button>
         </div>
-        <div class="mb-2 col-12 col-md-4">
+        <div class="col-12 col-md-4">
             <button type="button" class="btn btn-default btn-block">Default</button>
         </div>
     </div>

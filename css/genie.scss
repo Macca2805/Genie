@@ -8,6 +8,16 @@
     h2, .h2 {
         margin-top: $spacer * 3;
     }
+
+    .btn {
+        margin-bottom: $spacer * 0.5;
+    }
+    
+    pre.highlight {
+        margin: 0;
+        margin-bottom: $spacer;
+        padding: $spacer;
+    }
 }
 
 .navbar-nav-scroll {
@@ -17,38 +27,5 @@
     .navbar-nav {
         overflow-x: auto;
         white-space: nowrap;
-    }
-}
-
-.lead {
-    font-family: $headings-secondary-font-family;
-}
-
-pre.highlight {
-    margin: 0;
-    margin-bottom: $spacer;
-    padding: $spacer;
-}
-
-.callout {
-    padding: $spacer;
-    margin-bottom: $spacer * 2;
-    
-    :last-child {
-        margin-bottom: 0;
-    }
-
-    @each $color, $value in $theme-colors {
-        &.callout-#{$color} {
-            background: lighten(theme-color($color), 45%);
-            border: 1px solid darken(theme-color($color), 10%);
-            border-left: ($spacer * 0.5) solid darken(theme-color($color), 10%);
-
-            .callout-heading {
-                font-size: $h4-font-size;
-                font-weight: $headings-font-weight;
-                margin-bottom: $headings-margin-bottom;
-            }
-        }
     }
 }
