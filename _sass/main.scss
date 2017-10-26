@@ -25,12 +25,19 @@ $headings-secondary-font-family: "Gotham-Book", -apple-system, BlinkMacSystemFon
 
 $spacer: 1rem;
 
-$cc-primary: #3e8ca7;
-$cc-secondary: #E3B735;
+$cc-primary: #980129;
+$cc-secondary: #f0b600;
+
+$cc-finance: #5fded1;
+$cc-buysandloans: #196eff;
+$cc-jewellery: #3e40b3;
 
 $theme-colors: (
     primary: $cc-primary,
     secondary: $cc-secondary,
+    finance: $cc-finance,
+    buysandloans: $cc-buysandloans,
+    jewellery: $cc-jewellery,
     info: #0032d2
 );
 

@@ -4,7 +4,7 @@ title: Buttons
 description: The `.btn` class is designed to be used with the `<button>` element. However, you can also use these classes on `<a>` or `<input>` elements (though some browsers may apply a slightly different rendering).
 group: components
 permalink: /docs/components/buttons
-status: Work in Progress
+status: Complete
 owner: macklin.hartley
 ---
 
@@ -151,6 +151,10 @@ Make buttons look inactive by adding the disabled boolean attribute to any `<but
 ```
 
 ## Colors
+
+<button type="button" class="btn btn-finance">Personal Finance</button>
+<button type="button" class="btn btn-buysandloans">Buys and Loans</button>
+<button type="button" class="btn btn-jewellery">Jewellery</button>
 
 <button type="button" class="btn btn-danger">Danger</button>
 <button type="button" class="btn btn-warning">Warning</button>
