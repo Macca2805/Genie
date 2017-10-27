@@ -27,10 +27,10 @@ $spacer: 1rem;
 
 $cc-primary: #980129;
 $cc-secondary: #f0b600;
-
 $cc-finance: #5fded1;
 $cc-buysandloans: #196eff;
 $cc-jewellery: #3e40b3;
+$cc-muted: #616161;
 
 $theme-colors: (
     primary: $cc-primary,
@@ -38,7 +38,9 @@ $theme-colors: (
     finance: $cc-finance,
     buysandloans: $cc-buysandloans,
     jewellery: $cc-jewellery,
-    info: #0032d2
+    muted: $cc-muted,
+    info: #007bff,
+    warning: #ffc107
 );
 
 $h1-font-size: 2rem;
@@ -135,6 +137,16 @@ $transition-timing: cubic-bezier(.26,.85,.46,.99);
     a:hover,
     a:focus {
         text-decoration: none;
+    }
+    
+    .navbar-nav-scroll {
+        max-width: 100%;
+        overflow: hidden;
+    
+        .navbar-nav {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
     }
 }
 
